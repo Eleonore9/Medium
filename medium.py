@@ -2,7 +2,6 @@
 # -*- coding=UTF-8 -*-
 import os, sys
 from flask import Flask, render_template, redirect, request, url_for, session, g
-from dates.format import timesince
 
 app = Flask(__name__)
 
@@ -46,30 +45,24 @@ def index():
 @app.route("/intro", methods=["POST"])
 def intro():
     name = request.form['name']
-    environment = jinja2.environment(whatever)
-    environment.filters['timesince'] = timesince
     return render_template("intro.html", name=name)
 
-@app.route("/save_task", methods=["POST"])
-def save_task():
-    title = request.form['title']
-    user_id = session.get("user_id", None)
-    print user_id
-    model.Task.new(g.db, title, user_id)
-    return redirect(url_for("list_tasks"))
+@app.route("/question1")
+def to_q1():
+    return render_template("q1.html")
 
-#view for one particular task
-@app.route("/task/<int:id>", methods=["GET"])
-def view_task(id):
-    task_from_db = model.Task.get_task(g.db, id)
-    return render_template("view_task.html", task=task_from_db)
+@app.route("/question2", methods=["POST"])
+def to_q2():
+    answer1 = request.form['']
+    return render_template("q2.html")
 
-#mark this particular task as completed
-@app.route("/task/<int:id>", methods=["POST"])
-def complete_task(id):
-    task = model.Task.get_task(g.db, id)
-    task.complete_task(g.db, id)
-    return redirect(url_for("list_tasks"))
+@app.route("/question3", methods=["POST"])
+def to_q3():
+    return render_template("q3.html")
+
+@app.route("/result", methods=["POST"])
+def to_result():
+    return render_template("result.html")
 #---------------------------------------------------------
 
 #------- NOT NEEDED --------------------------------------

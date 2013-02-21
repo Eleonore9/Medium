@@ -6,17 +6,17 @@
     <div class="title">  
 
     	<h1> Welcome to <em>MEDIUM</em> </h1>
-		<h3>A prediction web app</h3>
+		<h4>A prediction web app</h4>
 
     </div>
 
 
-    <div class="body">
+    <div class="form">
 
-        <p> What is your name ? </p>
+        <h3> What is your name ? </h3>
  
         <div class="get_name">
-        	<form action="/intro" method="POST">
+        	<form action="{{url_for("intro")}}" method="POST">
         		<input type="text" name="name"></input>
                 <input type="submit" value="Submit" class="btn"></input>
         	</form>

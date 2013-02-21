@@ -1,0 +1,10 @@
+/* BACKGROUND */
+
+.background_body {
+	background-image: url(/static/img/dark_leather.png);
+	text-align: center;
+	color : red;
+	width: 100%;
+	height: 100%;
+
+}

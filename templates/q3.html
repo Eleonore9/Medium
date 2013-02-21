@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="background_body">
+
+	<div class="title">  
+
+    	<h1> <em>MEDIUM</em> </h1>
+		<h4>A prediction web app</h4>
+
+    </div>
+
+	<div class="question">
+        <h3>
+            What was your childhood dream?
+        </h3>
+    </div>
+
+    <div class="get_answer3">
+        <form action="{{url_for("to_result")}}" method="POST">
+            <li>
+                <ul>Going to the moon.  <input type="checkbox" name="answer3a"></input></ul>
+                <ul>Swimming with dolphins.  <input type="checkbox" name="answer3b"></input></ul>
+            </li>
+            <input type="submit" value="Submit" class="btn"></input>
+        </form>
+    </div>
+
+
+</div>
+{% endblock %}

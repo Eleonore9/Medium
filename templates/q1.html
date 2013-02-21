@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="background_body">
+
+	<div class="title">  
+
+    	<h1> <em>MEDIUM</em> </h1>
+		<h4>A prediction web app</h4>
+
+    </div>
+
+	<div class="question">
+        <h3>
+            What is your favorite color?
+        </h3>
+    </div>
+
+    <div class="get_answer1">
+        <form action="{{url_for("to_q2")}}" method="POST">
+            <li>
+                <ul>red  <input type="checkbox" name="answer1a"></input></ul>
+                <ul>blue  <input type="checkbox" name="answer1b"></input></ul>
+            </li>
+            <input type="submit" value="Next" class="btn"></input>
+        </form>
+    </div>
+
+
+</div>
+{% endblock %}
