@@ -1,31 +1,46 @@
 {% extends "layout.html" %}
 
 {% block body %}
-<div class="background_body">
+<div class="App_background">
 
-	<div class="title">  
+	<div class="navbar">  
+		<div class="navbar-inner">
+			<h1><em>MEDIUM</em></h1>
+		</div>
+	</div>
 
-    	<h1> <em>MEDIUM</em> </h1>
-		<h4>A prediction web app</h4>
 
-    </div>
+	<div class="Quote_background">
+		<h4><em>
+			'[...] Even the wisest can not tell <br>
+			 for the mirror shows many things; <br>
+			 things that were, things that are, <br>
+			 and even some things that will be'
+		</em></h4>
+		<p> Galadriel, LOTR </p>
+	</div>
 
-	<div class="question">
-        <h3>
-            What was your childhood dream?
-        </h3>
-    </div>
 
-    <div class="get_answer3">
-        <form action="{{url_for("to_result")}}" method="POST">
-            <li>
-                <ul>Going to the moon.  <input type="checkbox" name="answer3a"></input></ul>
-                <ul>Swimming with dolphins.  <input type="checkbox" name="answer3b"></input></ul>
-            </li>
-            <input type="submit" value="Submit" class="btn"></input>
-        </form>
-    </div>
+	<div class="container">
 
+		<div class="question">
+			<h3>
+				What was your childhood dream?
+			</h3>
+		</div>
+
+
+		<div class="get_answer3">
+			<form action="{{url_for("to_result")}}" method="POST">
+				<li>
+					<ul>Going to the moon.  <input type="checkbox" name="answer3a"></input></ul>
+					<ul>Swimming with dolphins.  <input type="checkbox" name="answer3b"></input></ul>
+				</li>
+				<input type="submit" value="Submit" class="btn"></input>
+			</form>
+		</div>
+
+	</div>
 
 </div>
 {% endblock %}

@@ -23,7 +23,7 @@ app = Flask(__name__)
 #-------- GO TO INDEX -------------------------------------- 
 @app.route("/")
 def index():
-    return render_template("index.html")
+	return render_template("index.html")
 
 #-------- NO LOGIN NEEDED ----------------------------------
 # @app.route("/login")
@@ -44,25 +44,26 @@ def index():
 #-------- HELLO MESSAGE AND INTRO -------------------------
 @app.route("/intro", methods=["POST"])
 def intro():
-    name = request.form['name']
-    return render_template("intro.html", name=name)
+	name = request.form['name']
+	return render_template("intro.html", name=name)
 
 @app.route("/question1")
 def to_q1():
-    return render_template("q1.html")
+	return render_template("q1.html")
 
 @app.route("/question2", methods=["POST"])
 def to_q2():
-    answer1 = request.form['']
-    return render_template("q2.html")
+	return render_template("q2.html")
 
 @app.route("/question3", methods=["POST"])
 def to_q3():
-    return render_template("q3.html")
+	return render_template("q3.html")
 
 @app.route("/result", methods=["POST"])
 def to_result():
-    return render_template("result.html")
+	answer3a = request.form['answer3a']
+	answer3b = request.form['answer3b']
+	return render_template("result.html", answer3a=answer3a, answer3b=answer3b)
 #---------------------------------------------------------
 
 #------- NOT NEEDED --------------------------------------
@@ -83,4 +84,4 @@ app.secret_key="Ceci_n'est_pas_une_clef_secrète"
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+	app.run(debug=True)

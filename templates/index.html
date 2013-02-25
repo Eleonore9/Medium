@@ -1,28 +1,41 @@
 {% extends "layout.html" %}
 
 {% block body %}
-<div class="background_body">
+<div class="App_background">
 
-    <div class="title">  
+	<div class="navbar">  
+		<div class="navbar-inner">
+			<h1><em>MEDIUM</em></h1> 
+		</div>
+	</div>
 
-    	<h1> Welcome to <em>MEDIUM</em> </h1>
-		<h4>A prediction web app</h4>
 
-    </div>
+	<div class="Quote_background">
+		<h4><em>
+			'Even the wisest can not tell, <br>
+			 for the mirror shows many things. <br>
+			 Things that were, things that are, <br>
+			 and even some things that have not yet come to pass.'
+		</em></h4>
+		<p> Galadriel, LOTR </p>
+	</div>
 
 
-    <div class="form">
+	<div class="container">
 
-        <h3> What is your name ? </h3>
- 
-        <div class="get_name">
-        	<form action="{{url_for("intro")}}" method="POST">
-        		<input type="text" name="name"></input>
-                <input type="submit" value="Submit" class="btn"></input>
-        	</form>
-        </div>
+		<div class="Text_background">
 
-    </div>
+			<h3> What is your name ? </h3>
+				<div class="get_name">
+					<form action="{{url_for("intro")}}" method="POST">
+						<input type="text" name="name"></input>
+						<input type="submit" value="Submit" class="btn btn-inverse"></input>
+					</form>
+				</div>
+
+		</div>
+
+	</div>
 
 </div>
 {% endblock %}

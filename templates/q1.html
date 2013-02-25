@@ -1,31 +1,46 @@
 {% extends "layout.html" %}
 
 {% block body %}
-<div class="background_body">
+<div class="App_background">
 
-	<div class="title">  
+	<div class="navbar">  
+		<div class="navbar-inner">
+			<h1><em>MEDIUM</em></h1>
+		</div>
+	</div>
 
-    	<h1> <em>MEDIUM</em> </h1>
-		<h4>A prediction web app</h4>
 
-    </div>
+	<div class="Quote_background">
+		<h4><em>
+			'[...] Even the wisest can not tell <br>
+			 for the mirror shows many things; <br>
+			 things that were, things that are, <br>
+			 and even some things that will be'
+		</em></h4>
+		<p> Galadriel, LOTR </p>
+	</div>
 
-	<div class="question">
-        <h3>
-            What is your favorite color?
-        </h3>
-    </div>
 
-    <div class="get_answer1">
-        <form action="{{url_for("to_q2")}}" method="POST">
-            <li>
-                <ul>red  <input type="checkbox" name="answer1a"></input></ul>
-                <ul>blue  <input type="checkbox" name="answer1b"></input></ul>
-            </li>
-            <input type="submit" value="Next" class="btn"></input>
-        </form>
-    </div>
+	<div class="container">
 
+		<div class="question">
+			<h3>
+				What is your favorite color?
+			</h3>
+		</div>
+
+
+		<div class="get_answer1">
+			<form action="{{url_for("to_q2")}}" method="POST">
+				<li>
+					<ul>red  <input type="checkbox" name="answer1a"></input></ul>
+					<ul>blue  <input type="checkbox" name="answer1b"></input></ul>
+				</li>
+				<input type="submit" value="Next" class="btn"></input>
+			</form>
+		</div>
+
+	</div>
 
 </div>
 {% endblock %}

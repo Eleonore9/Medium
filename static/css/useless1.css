@@ -1,10 +1,85 @@
-/* BACKGROUND */
+/* --------------------------------- BACKGROUNDS -------------------------------------- */
 
-.background_body {
+.App_background {
+	border: 2px solid green;
 	background-image: url(/static/img/dark_leather.png);
+	/*width: 100%;*/
+	height: 1000px;
+
+}
+
+.Quote_background {
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
+	color: grey;
 	text-align: center;
-	color : red;
-	width: 100%;
-	height: 100%;
+}
+
+.Text_background {
+	border: 1px solid red;
+	border-radius: 10px 10px;
+	box-shadow: 5px 5px 15px 2px;
+	margin-top: 50px;
+	padding: 30px;
+	text-align: center;
+	background-color: grey;
+}
+
+
+
+/* ------------------------------------ ELEMENTS ------------------------------------- */
+
+/* ----------- navbar ----------- */
+.navbar {
+	position: float;
+	background-color: grey;
+	border: 1px solid blue;
+	text-align: center;
+}
+
+
+/* ----------- forms ----------- */
+.get_name {
+
+}
+
+.get_answer1 {
+
+}
+
+.get_answer2 {
+
+}
+
+.get_answer3 {
+
+}
+
+
+/* ----------- btn ------------ */
+.btn_toquestion1 {
+
+}
+
+.btn btn-inverse {
+	margin-bottom: 100px;
+
+}
+
+
+/* ------- miscellanous ------- */
+.intro {
+
+}
+
+.question {
+
+}
+
+.result {
+
+}
+
+.show_result {
 
 }

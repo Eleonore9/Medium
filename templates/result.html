@@ -1,25 +1,46 @@
 {% extends "layout.html" %}
 
 {% block body %}
-<div class="background_body">
+<div class="App_background">
 
-	<div class="title">  
+	<div class="navbar">  
+		<div class="navbar-inner">
+			<h1><em>MEDIUM</em></h1>
+		</div>
+	</div>
 
-    	<h1> <em>MEDIUM</em> </h1>
-		<h4>A prediction web app</h4>
 
-    </div>
+	<div class="Quote_background">
+		<h4><em>
+			'[...] Even the wisest can not tell <br>
+			 for the mirror shows many things; <br>
+			 things that were, things that are, <br>
+			 and even some things that will be'
+		</em></h4>
+		<p> Galadriel, LOTR </p>
+	</div>
 
-	<div class="result">
-        <h3>
-            Here is my prediction :
-        </h3>
-    </div>
 
-    <div class="show_result">
-        
-    </div>
+	<div class="container">
 
+		<div class="result">
+			<h3>
+				Here is my prediction :
+			</h3>
+		</div>
+
+		<div class="show_result">
+			<h4> You are destined to </h4><br>
+			<h3><em>
+				{% if answer3a %}
+					EXPLORE THE WORLD
+				{% elif answer3b %}
+					PROTECT OTHERS
+				{% endif %}
+			</em></h3>
+		</div>
+
+	</div>
 
 </div>
 {% endblock %}
