@@ -1,7 +1,7 @@
 /* --------------------------------- BACKGROUNDS -------------------------------------- */
 
 .App_background {
-	border: 2px solid green;
+	/*border: 2px solid green;*/
 	background-image: url(/static/img/dark_leather.png);
 	/*width: 100%;*/
 	height: 2000px;
@@ -17,7 +17,7 @@
 }
 
 .Text_background {
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	border-radius: 15px 15px;
 	box-shadow: 5px 5px 15px 2px;
 	margin-top: 50px;
@@ -27,73 +27,26 @@
 	
 }
 
-
-
 /* ------------------------------------ ELEMENTS ------------------------------------- */
 
 /* ----------- navbar ----------- */
 .navbar {
 	position: float;
 	background-color: grey;
-	border: 1px solid blue;
+	/*border: 1px solid blue;*/
 	text-align: center;
-}
-
-
-/* ----------- forms ----------- */
-.get_name {
-
-}
-
-.get_answer1 {
-
-}
-
-.get_answer2 {
-
-}
-
-.get_answer3 {
-
-}
-
-
-/* ----------- btn ------------ */
-.btn_toquestion1 {
-
-}
-
-.btn btn-inverse {
-	/*display: inline-block;*/
-}
-
-
-/* ------- miscellanous ------- */
-.intro {
-
-}
-
-.question {
-
-}
-
-.result {
-
-}
-
-.show_result {
-
-}
-
-.result {
-	display: none;
 }
 
 .in_navbar {
 
 }
 
-.in_navbar a {
+h1 {
+	margin-top: 0px;
+	padding: 10px;
+}
+
+a {
 	color: black;
 }
 
@@ -101,4 +54,36 @@ a:hover {
 	cursor: pointer;
 	color: #0088CC;
 	text-decoration: none;
+}
+
+.second {
+	display: none;
+}
+
+.third {
+	display: none;
+}
+
+.fourth {
+	display: none;
+}
+
+.fifth {
+	display: none;
+}
+
+.sixth {
+	display: none;
+}
+.sixth .answer1 {
+	display: none;
+}
+.sixth .answer2 {
+	display: none;
+}
+.sixth .answer3 {
+	display: none;
+}
+.sixth .answer4 {
+	display: none;
 }

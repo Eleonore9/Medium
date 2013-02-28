@@ -1,0 +1,129 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<!-- -------------------------------------- Dark background,navbar and quote always diplayed ----------------------------------- -->
+<div class="App_background">
+
+	<div class="navbar">  
+		<a href="#" class="in_navbar">
+			<h1><em>MEDIUM</em></h1> 
+		</a>
+	</div>
+
+
+	<div class="Quote_background">
+		<h4><em>
+			'Even the wisest can not tell, <br>
+			 for the mirror shows many things. <br>
+			 Things that were, things that are, <br>
+			 and even some things that have not yet come to pass.'
+		</em></h4>
+		<p> Galadriel, LOTR </p>
+	</div>
+
+
+<!-- ------------------------------ in a container with a different background, content evolves ----------------------------- -->
+	<div class="container">
+
+		<div class="Text_background">
+
+			<!-- --------------------------- INDEX --------------------------- -->
+			<div class="first">
+				<h3> What is your name ? </h3>
+				<div class="get_name">
+					<form>
+						<input type="text" name="name"></input>
+						<input type="submit" value="Submit" class="btn"></input>
+					</form>
+				</div>
+			</div>	
+
+			<!-- --------------------------- INTRO --------------------------- -->
+			<div class="second">
+				<div class="intro">
+					<h3>
+						Hello! <br>
+						I will predict your future. <br>
+						Please, answer the following questions. <br>
+					</h3>
+				</div>
+				<div class="btn_toquestion1">
+					<a class="btn"> To questions </a>
+				</div>
+			</div>
+
+			<!-- ------------------------- QUESTION1 ------------------------ -->
+			<div class="third">
+				<div class="question">
+					<h3>What is your favorite color?</h3>
+				</div>
+				<div class="get_answer1">
+					<form>
+						<li>
+							<ul>red  <input type="checkbox" name="answer1a"></input></ul>
+							<ul>blue  <input type="checkbox" name="answer1b"></input></ul>
+						</li>
+						<input type="submit" value="Next" class="btn"></input>
+					</form>
+				</div>
+			</div>
+
+			<!-- ------------------------- QUESTION2 ------------------------ -->
+			<div class="fourth">
+				<div class="question">
+					<h3>What is your favorite pattern?</h3>
+				</div>
+				<div class="get_answer2">
+					<form>
+						<li>
+							<ul> stripes  <input type="checkbox" name="answer2a"></input></ul>
+							<ul> dots  <input type="checkbox" name="answer2b"></input></ul>
+						</li>
+						<input type="submit" value="Next" class="btn"></input>
+					</form>
+				</div>
+			</div>
+
+			<!-- ------------------------- QUESTION3 ------------------------ -->
+			<div class="fifth">
+				<div class="question">
+					<h3>What was your childhood dream?</h3>
+				</div>
+				<div class="get_answer3">
+					<form>
+						<li>
+							<ul>Going to the moon.  <input type="checkbox" name="answer3a"></input></ul>
+							<ul>Swimming with dolphins.  <input type="checkbox" name="answer3b"></input></ul>
+						</li>
+						<input type="submit" value="Submit" class="btn"></input>
+					</form>
+				</div>
+			</div>
+
+			<!-- --------------------------- RESULT -------------------------- -->
+			<div class="sixth">
+				<div class="result">
+					<h3>Here is my prediction :</h3>
+				</div>
+				<div class="show_result">
+					<h4> You are destined to </h4><br>
+						<div class="result">
+							<h3><em>
+							<div class="answer1">EXPLORE THE WORLD</div>
+							<div class="answer2">INSPIRE PEOPLE</div>
+							<div class="answer3">PROTECT OTHERS</div>
+							<div class="answer4">MAKE THE WORLD BETTER</div>
+							</em></h3>
+						</div>
+				</div>
+				<a href="{{ url_for("index") }}" class="btn btn-inverse">Try again!</a>
+			</div>
+
+
+		</div>
+
+	</div>
+
+</div>
+{% endblock %}
+
