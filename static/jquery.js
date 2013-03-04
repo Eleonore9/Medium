@@ -17,9 +17,11 @@ $(document).ready(function() {
 	});
 	$('.fifth .btn').click(function() {
 		$('.fifth').remove();
-		$('.sixth').fadeIn('slow').randomAnswer(); 
+		$('.sixth').fadeIn('slow');
+		randomAnswer(); 
 	});
 });
+
 function randomAnswer() {
 	var randNum = Math.random();
 		if(randNum < 0.26){
