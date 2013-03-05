@@ -1,8 +1,16 @@
 $(document).ready(function() {
-	$('.first .btn').click(function() {
-		$('.first').remove();
-		$('.second').fadeIn('fast');
+	// Validate the form
+	$('.first form').on('submit', function() {
+		validateName($('form input:text').val());
+		// $('.first').remove();
+		// $('.second').fadeIn('fast');
+		
 	});
+
+	// $('.first .btn').click(function() {
+	// 	$('.first').remove();
+	// 	$('.second').fadeIn('fast');
+	// });
 	$('.second .btn').click(function() {
 		$('.second').remove();
 		$('.third').fadeIn('fast');
@@ -21,6 +29,17 @@ $(document).ready(function() {
 		randomAnswer(); 
 	});
 });
+
+
+function validateName(nameInput) {
+	if(nameInput.length >= 2){
+		$('.first').remove();
+		$('.second').fadeIn('fast');
+	}else{
+		alert('please, enter your name!');
+	}
+}
+
 
 function randomAnswer() {
 	var randNum = Math.random();

@@ -1,11 +1,12 @@
 {% extends "layout.html" %}
 
 {% block body %}
-<!-- -------------------------------------- Dark background,navbar and quote always diplayed ----------------------------------- -->
+<!-- _____________________________________ Dark background,navbar and quote always diplayed ___________________________________ -->
+
 <div class="App_background">
 
 	<div class="navbar">  
-		<a href="#" class="in_navbar">
+		<a href="{{ url_for("index") }}" class="in_navbar">
 			<h1><em>MEDIUM</em></h1> 
 		</a>
 	</div>
@@ -22,12 +23,13 @@
 	</div>
 
 
-<!-- ------------------------------ in a container with a different background, content evolves ----------------------------- -->
+<!-- ______________________________ in a container with a different background, content evolves _______________________________ -->
+
 	<div class="container">
 
 		<div class="Text_background">
 
-			<!-- --------------------------- INDEX --------------------------- -->
+			<!-- ____________________________ INDEX _________________________ -->
 			<div class="first">
 				<h3> What is your name ? </h3>
 				<div class="get_name">
@@ -38,7 +40,7 @@
 				</div>
 			</div>	
 
-			<!-- --------------------------- INTRO --------------------------- -->
+			<!-- ___________________________ INTRO ___________________________ -->
 			<div class="second">
 				<div class="intro">
 					<h3>
@@ -52,7 +54,7 @@
 				</div>
 			</div>
 
-			<!-- ------------------------- QUESTION1 ------------------------ -->
+			<!-- __________________________ QUESTION1 ________________________ -->
 			<div class="third">
 				<div class="question">
 					<h3>What is your favorite color?</h3>
@@ -68,7 +70,7 @@
 				</div>
 			</div>
 
-			<!-- ------------------------- QUESTION2 ------------------------ -->
+			<!-- ___________________________ QUESTION2 _______________________ -->
 			<div class="fourth">
 				<div class="question">
 					<h3>What is your favorite pattern?</h3>
@@ -84,7 +86,7 @@
 				</div>
 			</div>
 
-			<!-- ------------------------- QUESTION3 ------------------------ -->
+			<!-- ____________________________ QUESTION3 ______________________-->
 			<div class="fifth">
 				<div class="question">
 					<h3>What was your childhood dream?</h3>
@@ -100,7 +102,7 @@
 				</div>
 			</div>
 
-			<!-- --------------------------- RESULT -------------------------- -->
+			<!-- ____________________________ RESULT ________________________ -->
 			<div class="sixth">
 				<div class="result">
 					<h3>Here is my prediction :</h3>
