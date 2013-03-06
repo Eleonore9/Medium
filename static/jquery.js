@@ -1,7 +1,8 @@
 $(document).ready(function() {
 	// Validate name length and go to intro
 	$('.first form').on('submit', function() {
-		validateName($('form input:text').val());
+		var $name = $('form input:text').val();
+		validateName($name);
 	});
 	// Go from intro to 1st question
 	$('.second .btn').click(function() {
@@ -32,6 +33,7 @@ function validateName(nameInput) {
 	if(nameInput.length >= 2 && isNaN(nameInput)){
 		$('.first').remove();
 		$('.second').fadeIn('fast');
+		$('.second h3 span').append(nameInput).css('color', '#0088CC');
 	}else{
 		alert('please, enter your name!');
 	}
