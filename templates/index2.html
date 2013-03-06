@@ -3,7 +3,7 @@
 {% block body %}
 <!-- _____________________________________ Dark background,navbar and quote always diplayed ___________________________________ -->
 
-<div class="App_background">
+<div id="App_background">
 
 	<div class="navbar">  
 		<a href="{{ url_for("index") }}" class="in_navbar">
@@ -61,10 +61,10 @@
 				</div>
 				<div class="get_answer1">
 					<form>
-						<li>
-							<ul>red  <input type="checkbox" name="answer1a"></input></ul>
-							<ul>blue  <input type="checkbox" name="answer1b"></input></ul>
-						</li>
+						<ul>
+							<li>red  <input type="checkbox" name="answer1a"></input></li>
+							<li>blue  <input type="checkbox" name="answer1b"></input></li>
+						</ul>
 						<input type="submit" value="Next" class="btn"></input>
 					</form>
 				</div>
@@ -77,10 +77,10 @@
 				</div>
 				<div class="get_answer2">
 					<form>
-						<li>
-							<ul> stripes  <input type="checkbox" name="answer2a"></input></ul>
-							<ul> dots  <input type="checkbox" name="answer2b"></input></ul>
-						</li>
+						<ul>
+							<li> stripes  <input type="checkbox" name="answer2a"></input></li>
+							<li> dots  <input type="checkbox" name="answer2b"></input></li>
+						</ul>
 						<input type="submit" value="Next" class="btn"></input>
 					</form>
 				</div>
@@ -93,10 +93,10 @@
 				</div>
 				<div class="get_answer3">
 					<form>
-						<li>
-							<ul>Going to the moon.  <input type="checkbox" name="answer3a"></input></ul>
-							<ul>Swimming with dolphins.  <input type="checkbox" name="answer3b"></input></ul>
-						</li>
+						<ul>
+							<li>Going to the moon.  <input type="checkbox" name="answer3a"></input></li>
+							<li>Swimming with dolphins.  <input type="checkbox" name="answer3b"></input></li>
+						</ul>
 						<input type="submit" value="Submit" class="btn"></input>
 					</form>
 				</div>

@@ -2,11 +2,7 @@ $(document).ready(function() {
 	// Validate the form
 	$('.first form').on('submit', function() {
 		validateName($('form input:text').val());
-		// $('.first').remove();
-		// $('.second').fadeIn('fast');
-		
 	});
-
 	// $('.first .btn').click(function() {
 	// 	$('.first').remove();
 	// 	$('.second').fadeIn('fast');

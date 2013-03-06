@@ -1,6 +1,6 @@
 /* --------------------------------- BACKGROUNDS -------------------------------------- */
 
-.App_background {
+#App_background {
 	/*border: 2px solid green;*/
 	background-image: url(/static/img/dark_leather.png);
 	/*width: 100%;*/
