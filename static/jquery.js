@@ -30,10 +30,12 @@ $(document).ready(function() {
 
 
 function validateName(nameInput) {
+	//Checks if input has more than 1 charcater
+	// and if it is not a number
 	if(nameInput.length >= 2 && isNaN(nameInput)){
 		$('.first').remove();
 		$('.second').fadeIn('fast');
-		$('.second h3 span').append(nameInput).css('color', '#0088CC');
+		$('.second h3 span').append(nameInput).css('color', '#0F5445');
 	}else{
 		alert('please, enter your name!');
 	}
@@ -41,6 +43,7 @@ function validateName(nameInput) {
 
 
 function randomAnswer() {
+	// Selects a result randomly
 	var randNum = Math.random();
 		if(randNum < 0.26){
 			$('.sixth .answer1').fadeIn('slow');
@@ -53,37 +56,3 @@ function randomAnswer() {
 		}
 }
 
-
-// Attemps to define a function in jQuery or JS
-// randomAnswer select a result randomly
-
-// jQuery.fn.extend({
-// 	randomAnswer: function () {
-// 		var randNum = Math.random();
-// 		if(randNum < 0.26){
-// 			$('.answer1').fadeIn('slow');
-// 		}else if(randNum < 0.51){
-// 			$('.answer2').fadeIn('slow');
-// 		}else if(randNum < 0.76){
-// 			$('.answer3').fadeIn('slow');
-// 		}else{
-// 			$('.answer4').fadeIn('slow');
-// 		}
-// 	}
-// });
-
-
-// var randomAnswer = function() {
-// 	var answer = "";
-// 	var randNum = Math.random();
-// 	if(randNum < 0.26){
-// 		answer = "EXPLORE THE WORLD";
-// 	}else if(randNum < 0.51){
-// 		answer = "INSPIRE PEOPLE";
-// 	}else if(randNum < 0.76){
-// 		answer = "PROTECT OTHERS";
-// 	}else{
-// 		answer = "MAKE THE WORLD BETTER";
-// 	}
-// 	return answer;
-// };

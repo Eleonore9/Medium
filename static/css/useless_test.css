@@ -1,40 +1,42 @@
 /* --------------------------------- BACKGROUNDS -------------------------------------- */
 
 #App_background {
-	/*border: 2px solid green;*/
+	float: top;
 	background-image: url(/static/img/dark_leather.png);
-	/*width: 100%;*/
-	height: 2000px;
-
+	width: 100%;
+	height: 100%;
 }
 
+
 .Quote_background {
+	float: top;
 	border-top: 2px solid grey;
 	border-bottom: 2px solid grey;
 	color: grey;
 	text-align: center;
-	opacity: 0.2;
+	opacity: 0.25;
+	width: 100%;
 }
 
 .Text_background {
-	/*border: 1px solid red;*/
 	border-radius: 15px 15px;
 	box-shadow: 5px 5px 15px 2px;
 	margin-top: 50px;
 	padding: 30px;
 	text-align: center;
 	background-color: grey;
-	
+	opacity: 0.65;
 }
 
 /* ------------------------------------ ELEMENTS ------------------------------------- */
 
 /* ----------- navbar ----------- */
 .navbar {
-	position: float;
+	/*position: float;*/
+	float: top;
 	background-color: grey;
-	/*border: 1px solid blue;*/
 	text-align: center;
+	width: 100%;
 }
 
 .in_navbar {
@@ -47,13 +49,17 @@ h1 {
 }
 
 a {
-	color: black;
+	color: #273454;
 }
 
 a:hover {
 	cursor: pointer;
 	color: #0088CC;
 	text-decoration: none;
+}
+
+.container{
+	width: 40%;
 }
 
 .second {
@@ -86,4 +92,11 @@ a:hover {
 }
 .sixth .answer4 {
 	display: none;
+}
+
+.footer {
+	text-align: center;
+	float: bottom;
+	margin-top: 20%;
+	padding-bottom: 20px;
 }

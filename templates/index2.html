@@ -34,7 +34,7 @@
 				<h3> What is your name ? </h3>
 				<div class="get_name">
 					<form>
-						<input type="text" name="name"></input>
+						<input type="text" name="name"></input><br>
 						<input type="submit" value="Submit" class="btn"></input>
 					</form>
 				</div>
@@ -125,7 +125,14 @@
 		</div>
 
 	</div>
-
+	<div class="footer">
+		<p> 
+			Copyright 2013
+		 	<a href="{{ url_for("index") }}">Medium</a>
+		 	<br> by
+		 	<a href="https://twitter.com/eleonoremayola">@EleonoreMayola</a> 
+		</p>
+	</div>
 </div>
 {% endblock %}
 
