@@ -1,24 +1,25 @@
 $(document).ready(function() {
-	// Validate the form
+	// Validate name length and go to intro
 	$('.first form').on('submit', function() {
 		validateName($('form input:text').val());
 	});
-	// $('.first .btn').click(function() {
-	// 	$('.first').remove();
-	// 	$('.second').fadeIn('fast');
-	// });
+	// Go from intro to 1st question
 	$('.second .btn').click(function() {
 		$('.second').remove();
 		$('.third').fadeIn('fast');
 	});
+	// Go from 1st question to 2nd question
 	$('.third .btn').click(function() {
 		$('.third').remove();
 		$('.fourth').fadeIn('fast');
 	});
+	// Go from 2nd question to 3rd question
 	$('.fourth .btn').click(function() {
 		$('.fourth').remove();
 		$('.fifth').fadeIn('fast');
 	});
+	// Go from 3rd question to result
+	// result is chosen randomly
 	$('.fifth .btn').click(function() {
 		$('.fifth').remove();
 		$('.sixth').fadeIn('slow');
@@ -28,7 +29,7 @@ $(document).ready(function() {
 
 
 function validateName(nameInput) {
-	if(nameInput.length >= 2){
+	if(nameInput.length >= 2 && isNaN(nameInput)){
 		$('.first').remove();
 		$('.second').fadeIn('fast');
 	}else{
