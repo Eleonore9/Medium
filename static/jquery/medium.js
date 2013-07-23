@@ -1,27 +1,28 @@
 $(document).ready(function() {
 	// Validate name length and go to intro
-	$('.first form').on('submit', function() {
-		var $name = $('form input:text').val();
+	$('.first form .btn').on('click', function() {
+		var $name = $('.first form input[name=name]').val();
+		console.log($name);
 		validateName($name);
 	});
-	// Go from intro to 1st question
 	$('.second .btn').click(function() {
+		// Go from intro to 1st question
 		$('.second').remove();
 		$('.third').fadeIn('fast');
 	});
-	// Go from 1st question to 2nd question
 	$('.third .btn').click(function() {
+		//Go from 1st question to 2nd question
 		$('.third').remove();
 		$('.fourth').fadeIn('fast');
 	});
-	// Go from 2nd question to 3rd question
 	$('.fourth .btn').click(function() {
+		// Go from 2nd question to 3rd question
 		$('.fourth').remove();
 		$('.fifth').fadeIn('fast');
 	});
-	// Go from 3rd question to result
-	// result is chosen randomly
 	$('.fifth .btn').click(function() {
+		// Go from 3rd question to result
+		// result is chosen randomly
 		$('.fifth').remove();
 		$('.sixth').fadeIn('slow');
 		randomAnswer(); 
@@ -35,6 +36,7 @@ function validateName(nameInput) {
 	if(nameInput.length >= 2 && isNaN(nameInput)){
 		$('.first').remove();
 		$('.second').fadeIn('fast');
+		// $('.second h3 span').after().remove();
 		$('.second h3 span').append(nameInput).css('color', '#0F5445');
 	}else{
 		alert('please, enter your name!');
