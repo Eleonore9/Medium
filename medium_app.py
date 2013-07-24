@@ -1,7 +1,7 @@
 #!/usr/local/bin/python
 # -*- coding=UTF-8 -*-
 import os, sys
-from flask import Flask, render_template, redirect, request, url_for, session, g
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
@@ -12,11 +12,6 @@ app = Flask(__name__)
 @app.route("/")
 def index():
 	return render_template("index.html")
-
-@app.route("/page2")
-def page2():
-	return render_template("test2.html")
-
 
 #---------------------------------------------------------
 
