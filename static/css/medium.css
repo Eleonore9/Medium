@@ -1,22 +1,30 @@
 /* --------------------------------- BACKGROUNDS -------------------------------------- */
+html, body {
+	margin: 0;
+	padding:0;
+	height: 100%;
+}
 
 #App_background {
-	float: top;
+	/* float: top;*/
 	background-image: url(/static/img/dark_leather.png);
 	width: 100%;
 	height: 100%;
+	margin-top:0;
 }
 
 
 .Quote_background {
-	float: top;
-	margin-top: 40px;
+	/* float: top; */
+	margin-top: 10;
+	padding: 10px;
 	border-top: 2px solid grey;
 	border-bottom: 2px solid grey;
 	color: grey;
 	text-align: center;
 	opacity: 0.25;
 	width: 100%;
+	height: 80px;
 
 }
 
@@ -27,11 +35,11 @@
 	-moz-box-shadow: 5px 5px 15px 2px;
 	-webkit-box-shadow: 5px 5px 15px 2px;
 	box-shadow: 5px 5px 15px 2px;
-	margin-top: 100px;
+	margin-top: 150px;
 	padding: 30px;
 	text-align: center;
 	background-color: grey;
-	opacity: 0.6;
+	opacity: 0.5;
 	/*z-index: 1000;*/
 	/*width: 40%;*/
 }
@@ -62,7 +70,7 @@
 }
 
 h1 {
-	margin-top: 0px;
+	margin-top: 0;
 	padding: 10px;
 	font-family: 'Quando';
 }
