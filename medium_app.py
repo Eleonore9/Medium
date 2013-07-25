@@ -8,10 +8,12 @@ app = Flask(__name__)
 
 
 
-#-------- GO TO INDEX -------------------------------------- 
+#-------- GO TO APP --------------------------------------
+# Yep, that's a one page app!
+
 @app.route("/")
 def index():
-	return render_template("index.html")
+	return render_template("medium.html")
 
 #---------------------------------------------------------
 
