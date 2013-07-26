@@ -36,7 +36,6 @@ function validateName(nameInput) {
 	if(nameInput.length >= 2 && isNaN(nameInput)){
 		$('.first').remove();
 		$('.second').fadeIn('fast');
-		// $('.second h3 span').after().remove();
 		$('.second h3 span').append(nameInput).css('color', '#0F5445');
 	}else{
 		alert('please, enter your name!');

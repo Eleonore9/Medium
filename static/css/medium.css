@@ -39,7 +39,8 @@ html, body {
 	margin-top: 150px;
 	padding: 30px;
 	text-align: center;
-	background-color: #E5E5C9;
+	/* background-color: #E5E5C9;*/
+	background-color: #E8DEDE;
 	opacity: 0.3;
 }
 .Text_background:hover {
