@@ -1,20 +1,14 @@
-import os
 import medium_app
 import unittest
-import tempfile
-import sqlite3
 
-class FlaskrTestCase(unittest.TestCase):
+class MediumAppTestCase(unittest.TestCase):
 
     def setUp(self):
-        self.db_fd, flaskr.app.config['DATABASE'] = tempfile.mkstemp()
-	flaskr.app.config['TESTING'] = True
-	self.app = flaskr.app.test_client()
-	flaskr.init_db()
+	self.app = medium_app.app.test_client()
 
-    def tearDown(self):
-	os.close(self.db_fd)
-	os.unlink(flaskr.app.config['DATABASE'])
+    def test_index(self):
+	response = self.app.get('/')
+	self.assertEqual(response.status_code, 200)
 
 if __name__ == '__main__':
     unittest.main()
