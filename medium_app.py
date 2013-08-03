@@ -12,7 +12,7 @@ app = Flask(__name__)
 jasmine = Jasmine(app)
 
 jasmine.specs(
-    './specs/medium.js',
+    './spec/mediumSpec.js',
 )
 
 jasmine.sources(
