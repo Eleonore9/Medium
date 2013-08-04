@@ -2,7 +2,6 @@ $(document).ready(function() {
 	// Validate name length and go to intro
 	$('.first form .btn').on('click', function() {
 		var $name = $('.first form input[name=name]').val();
-		console.log($name);
 		validateName($name);
 	});
 	$('.second .btn').click(function() {
