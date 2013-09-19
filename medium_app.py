@@ -2,7 +2,7 @@
 # -*- coding=UTF-8 -*-
 import os, sys
 from flask import Flask, render_template, url_for
-#from flask.ext.jasmine import Jasmine
+from flask.ext.jasmine import Jasmine
 
 #port=int(os.environ.get('PORT', 33507))
 #heroku config:add PORT=33507
