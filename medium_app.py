@@ -2,7 +2,7 @@
 # -*- coding=UTF-8 -*-
 import os, sys
 from flask import Flask, render_template, url_for
-#Tests in progress on Testing git branch
+#Tests writing still in progress on Testing branch
 from flask.ext.jasmine import Jasmine
 
 #port=int(os.environ.get('PORT', 33507))
